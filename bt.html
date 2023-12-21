@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Bài 1: Nhập vào hai số a và b, và kiểm tra xem a có chia hết cho b hay không
+    let a = +prompt('nhap so a')
+    let b = +prompt('nhap so b')
+    if (a % b == 0) {
+        alert('a chia het cho b')
+    }
+    else {
+        alert('a ko chia het cho b')
+    }
+
+    //Bài 3: Nhập một số nguyên bất kỳ và in kết quả ra màn hình để nói cho người dùng biết số đó là lớn hay nhỏ hơn 0
+    let a = +prompt('nhap so nguyen bat ky')
+    if (a > 0) {
+        alert('a lon hon 0')
+    }
+    if (a = 0) {
+        alert('a bang 0')
+    }
+    if (a < 0) {
+        alert('a be hon 0')
+    }
+
+    //Bài 4: Nhập 3 số nguyên và tìm giá trị lớn nhất của ba số nguyên đó
+    let a = prompt("nhap so a")
+    let b = prompt("nhap so b")
+    let c = prompt("nhap so c")
+    if (a > b && a > c) {
+        alert("a la so lon nhat")
+    }
+    if (a < b && b > c) {
+        alert("b la so lon nhat")
+    }
+    if (a < b && b < c) {
+        alert("c la so lon nhat")
+    }
+
+    //Bài 5: Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ
+    let a = +prompt("nhap so diem");
+    if (a <= 10 && a >= 8) {
+        alert("hoc sinh goi")
+    }
+    if (a <8 && a >= 5) {
+        alert("hoc sinh trung binh")
+    }
+    if (a < 5) {
+        alert("hoc sinh yeu")
+    }
+
+    /Bài 1: Chuyển từ độ C sang độ F.
+    //°C  x  9/5 + 32 = °F
+    let a = prompt('nhap do C')
+    let b = a * 9/5 + 32
+    alert(b)
+
+    //Bài 2: Chuyển từ mét sang feet:
+    //ft =m * 3.2808
+    let a = +prompt('nhap so met')
+    let b = a * 3.2808
+    alert(b)
+
+    //Bài 3: Tính diện tích hình vuông khi biết cạnh a.
+    let a = +prompt('nhap so do canh a')
+    let b = a * a
+    alert(b)
+
+    //Bài 4: Tính diện tích hình  chữ nhật khi biết 02 cạnh a, b.
+    let a = + prompt('nhap canh a')
+    let b = + prompt('nhap canh b')
+    let c = a * b
+    alert(c)
+
+    //Bài 5: Tính diện tích tam giác vuông khi biết 02 cạnh kề a, b.
+    let a = +prompt('nhap canh a')
+    let b = +prompt('nhap canh b')
+    let c = a * b / 2
+    alert(c)
+
+    //Bài 6: Giải phương trình bậc 1.
+    let a = prompt('nhap a');
+    let b = prompt('nhap b');
+    let x = -b / a;
+    if (a == 0) {
+        if (b == 0) {
+            alert('phuong trinh vo so nghiem')
+        }
+        else {
+            alert('phuong trinh vo nghiem')
+        }
+    }
+    if (a != 0);
+    console.log(x)
+    alert(x)
+
+    //Bài 7: Giải phương trình bậc 2.
+    let a = +prompt('nhap a')
+    let b = +prompt('nhap b')
+    let c = +prompt('nhap c')
+    let d = b * b - 4 * a * c
+    if (d >= 0) {
+        x1 = (-b + Math.sqrt(d)) / (2 * a)
+        x2 = (-b - Math.sqrt(d)) / (2 * a){
+            alert(x1)
+            alert(x2)
+        }
+    }
+    if (d = 0) {
+        x = -b / (2 * a) {
+            alert(x)
+        }
+    }
+    else {
+        alert('phuong trinh vo nghiem')
+    }
+
+    //Bài 8: Kiểm tra xem một số nhập vào có phải là tuổi của một người không. Một số nguyên là tuổi của một người khi nhỏ 120 và lơn hơn 0.
+    let a = +prompt('nhap so de check')
+    if (a > 0 && a < 120) {
+        alert('day la tuoi cua mot nguoi')
+    }
+    else {
+        alert('day ko phai tuoi cau mot nguoi')
+    }
+
+    //Bài 9: Kiểm tra xem 3 số thực (a,b,c) nhập vào có phải là cạnh của một tam giác. Điều kiện để a,b,c là cạnh của một tam giác là:
+    let a = prompt('canh a:')
+    let b = prompt('canh b:')
+    let c = prompt('canh c:')
+    if (a > 0 && b > 0 && c > 0) {
+        if (a + b > c || a + c > b || b + c > a){
+            alert('a,b,c la canh cua 1 tam giac')
+        }
+        else {
+            alert('a,b,c ko phai la canh cua 1 tam giac')
+        }
+    }
+</script>
+</body>
+</html>
